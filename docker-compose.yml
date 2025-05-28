@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  rust-ppc:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: rust-ppc
+    volumes:
+      - .:/workspace
+    working_dir: /workspace/hello_rust
+    tty: true

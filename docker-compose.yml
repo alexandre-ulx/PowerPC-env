@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  ppc-cross:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ppc-cross
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
+    tty: true

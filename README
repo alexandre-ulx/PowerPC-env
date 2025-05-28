@@ -1,0 +1,8 @@
+Start dev PowerPC
+=====================
+
+build -> docker build -t ppc-cross .
+
+run -> docker run --rm -it -v $(pwd):/workspace ppc-cross
+
+container -> make && qemu-ppc ./hello_ppc
